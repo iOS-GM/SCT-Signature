@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- iOS·SCT团队专用的签名plist文件 -->
+<!-- 提示:开发者测试文件仅包含权限 -->
+<!-- 提示只能用iOS·SCT开发的签名器才能正确签名负责无效 -->
+	<!-- 元数据 -->
+<plist version="1.0">
+<dict>
+	<key>EncryptedData</key>
+	<dict>
+		<key>Method</key>
+		<string>No-developer-mode</string>
+		<key>Payload</key>
+		<data>
+		APMODgAOAAA=
+		</data>
+	</dict>
+	<key>Metadata</key>
+	<dict>
+		<key>Algorithm</key>
+		<string>No-developer-mode</string>
+		<key>KeyID</key>
+		<string>No-developer-mode</string>
+		<key>Timestamp</key>
+		<date>2001-01-01T00:00:00Z</date>
+	</dict>
+	<key>Permissions</key>
+	<array>
+		<string>com.sct.developers-application-groups</string>
+		<string>com.sct.developers-background-task</string>
+		<string>com.sct.developers-network.client</string>
+		<string>com.sct.developers-get-task-allow</string>
+		<string>com.sct.developers-skip-library-validation</string>
+		<string>com.sct.developers-security.no-sandbox</string>
+		<string>com.sct.developers-allow-explicit-app-level-api</string>
+		<string>com.sct.developers-tcc.allow</string>
+		<string>com.sct.developers-security.storage.AppData</string>
+		<string>com.sct.developers-filesystems.userfs</string>
+		<string>com.sct.developers-kernel.extensions</string>
+		<string>com.sct.developers-network.socket-delegate</string>
+		<string>com.sct.developers-cs.debugger</string>
+	</array>
+</dict>
+</plist>

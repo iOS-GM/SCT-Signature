@@ -1,0 +1,28 @@
+这个目录里面都是示例文件
+
+文件 SCT-Permission-Mapping.h 是一个示例文件，内容是 com.sct.developers 与 com.apple 权限的映射表。
+
+如果需要补齐 com.apple 权限，这里有一个小方法：
+那就是 com.apple.security = com.sct.developers。
+这样子只需要将 com.apple.security 中 security 后面的权限放到 com.sct.developers- 后面即可。
+
+示例： 
+com.apple.security.application-groups 对应 com.sct.developers-application-groups
+
+其中：
+- com.apple.security 开头是 apple 权限
+- com.sct.developers 开头是 SCT 权限
+
+signature-p12.plist文件
+这是我们(即官方)给的一份模板文件您可以直接使用他
+因为模板文件的内容是最简单的只需要填充权限即可
+当然如果您能力可以的话也可以通过developer-mode-signature-p12.plist示例文件来补充
+
+entitlements.plist文件
+这是使用signature-p12.plist模板文件转换出来的entitlements.plist权限文件
+您可以直接使用ldid -Sentitlements.plist 可执行二进制文件 来直接注入进去
+或者直接使用我们的模板示例文件也可以
+
+developer-mode-signature-p12.plist文件
+这是一个示例文件
+他唯一的用处就是给您们查看的(因为不包含任何数据)

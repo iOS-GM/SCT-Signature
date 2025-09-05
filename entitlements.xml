@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- 1. 基础身份 (通常必须) -->
+    <key>com.apple.private.security.container-required</key>
+    <false/>
+
+    <!-- 2. 加载未签名库/插件 (常见需求) -->
+    <key>com.apple.private.skip-library-validation</key>
+    <true/>
+
+    <!-- 3. 文件系统访问 (按需开启) -->
+    <!-- 如果需要访问用户任意文件，请保留此项 -->
+    <key>com.apple.private.filesystem.full-access</key>
+    <true/>
+
+    <!-- 4. 调试与进程控制 (如果您需要调试或启动其他进程) -->
+    <key>get-task-allow</key>
+    <true/>
+    <key>com.apple.private.posix.spawn</key>
+    <true/>
+
+    <!-- 5. 网络访问 (如果您的工具需要网络) -->
+    <key>com.apple.private.network.socket-delegate</key>
+    <true/>
+</dict>
+</plist>

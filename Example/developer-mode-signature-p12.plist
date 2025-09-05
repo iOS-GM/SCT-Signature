@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- iOS-SCT -->
+<plist version="1.0"> 
+<dict>
+<!-- iOS·SCT团队专用的签名plist文件 -->
+<!-- 提示:示例文件无数据 -->
+<!-- 提示只能用iOS·SCT开发的签名器才能正确签名负责无效 -->
+	<!-- 元数据 -->
+	<key>Metadata</key>
+	<dict>
+		<key>KeyID</key> <!-- 私钥 -->
+		<string></string> <!-- 存放私钥的地方 -->
+		<key>Algorithm</key> <!-- 签名算法 -->
+		<string></string> <!-- 签名的算法例如: RSA-SHA256算法 -->
+		<key>Timestamp</key> <!-- 签名时间 -->
+		<date>2001-01-01T00:00:00Z</date> <!-- 签名时间ISO 8601格式 -->
+	</dict>
+
+	<!-- 申请的权限 -->
+	<key>Permissions</key> <!-- 需要申请的权限 -->
+	<array> <!-- 权限组输入需要的权限即可 --> <!-- 具体权限名字请查看权限组说明文档 -->
+	</array>
+
+	<!-- 加密的数据存储区域 -->
+	<key>EncryptedData</key> <!-- 加密方法 -->
+	<dict>
+		<key>Method</key> <!-- 加密方法如: AES-256-GCM加密 -->
+		<string></string>
+		<key>Payload</key> <!-- 加密后的二进制数据切勿修改否则可能导致加密数据损坏无法正常签名的情况 -->
+		<data>
+		</data>
+	</dict>
+</dict>
+</plist>
